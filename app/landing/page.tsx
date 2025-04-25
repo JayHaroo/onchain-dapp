@@ -1,27 +1,12 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Label } from "@/components/ui/label"
+
 
 export default function Landing() {
   return (
-    <div className="bg-[#09090b] h-screen max-w-screen">
-      <Card>
-        <CardHeader>
-          <CardTitle>Card Title</CardTitle>
-          <CardDescription>Card Description</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p>Card Content</p>
-        </CardContent>
-        <CardFooter>
-          <p>Card Footer</p>
-        </CardFooter>
-      </Card>
+    <div className="flex items-center space-x-2">
+        <div className="">
+            <Label>Welcome to OnChain dApp!</Label>
+        </div>
     </div>
   );
 }
