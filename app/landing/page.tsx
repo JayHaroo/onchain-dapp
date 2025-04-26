@@ -22,14 +22,14 @@ export default function Landing() {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex justify-between max-w-screen w-11/12 p-2">
-        <Label>Welcome to OnChain dApp!</Label>
+        <Label className="font-special">Welcome to OnChain dApp!</Label>
         <Wallet />
       </div>
       <Separator />
-      <div className="flex justify-evenly max-w-screen max-h-full p-2 w-11/12">
+      <div className="flex justify-around max-w-screen max-h-full p-2 w-11/12">
         <div className="w-[250px] flex-col justify-around">
-          <div className="">
-            <Label htmlFor="nftbox" className="text-sm">
+          <div className="mb-2">
+            <Label htmlFor="nftbox" className="text-sm font-special">
               NFT Address:
             </Label>
             <Textarea
@@ -39,8 +39,8 @@ export default function Landing() {
               onChange={(e) => setAddress(e.target.value)}
             />
           </div>
-          <div className="">
-            <Label htmlFor="vaultbox" className="text-sm">
+          <div className="mb-2">
+            <Label htmlFor="vaultbox" className="text-sm font-special">
               Vault Address:
             </Label>
             <Textarea
