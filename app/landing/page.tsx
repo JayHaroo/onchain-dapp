@@ -17,8 +17,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 
 export default function Landing() {
-  const [address, setAddress] = useState("");
-  const [vaultAdd, setVaultAdd] = useState("");
+  const [address, setAddress] = useState("0x5E460559B2d57373a5D03CC096FaFFd021CE39F7");
+  const [vaultAdd, setVaultAdd] = useState("0x7BfA7C4f149E7415b73bdeDfe609237e29CBF34A");
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex justify-between max-w-screen w-11/12 p-2">
@@ -53,7 +53,7 @@ export default function Landing() {
         </div>
         <div className="flex justify-evenly w-11/12 max-w-full">
           <div className="">
-            <NFTMintCard contractAddress="0x5E460559B2d57373a5D03CC096FaFFd021CE39F7">
+            <NFTMintCard contractAddress={address}>
               <NFTCreator />
               <NFTMedia />
               <NFTCollectionTitle />
@@ -63,7 +63,7 @@ export default function Landing() {
             </NFTMintCard>
           </div>
           <div className="">
-            <Earn vaultAddress="0x7BfA7C4f149E7415b73bdeDfe609237e29CBF34A" />
+            <Earn vaultAddress={vaultAdd} />
           </div>
         </div>
       </div>
